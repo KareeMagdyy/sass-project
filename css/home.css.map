@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "AKAA,AAAA,KAAK,CAAC;EACJ,gBAAgB,EJAH,IAAI;CIOlB;;AARD,AAEE,KAFG,CAEH,EAAE,CAAC;EACD,KAAK,EJHI,IAAI;CIId;;AAJH,AAKE,KALG,CAKH,CAAC,CAAC;EACA,SAAS,EAAE,IAAI;CAChB",
+    "sources": [
+        "home.scss",
+        "sass/helpers/_variables.scss",
+        "sass/helpers/_mixins.scss",
+        "sass/layout/_header.scss",
+        "sass/layout/_grid.scss",
+        "sass/pages/_home.scss",
+        "sass/components/_buttons.scss",
+        "sass/layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "home.css"
+}
