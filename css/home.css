@@ -1,12 +1,9 @@
 .main {
-  background-color: #ccc;
+  background-color: #eee;
 }
-
 .main h1 {
-  color: #080;
+  color: #f80;
 }
-
 .main p {
-  font-size: 1rem;
+  font-size: 2rem;
 }
-/*# sourceMappingURL=home.css.map */

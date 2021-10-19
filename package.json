@@ -1,0 +1,28 @@
+{
+  "name": "sass-project",
+  "version": "1.0.0",
+  "description": "Sass Practice",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KareeMagdyy/sass-project.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Kareem Magdy El-Zomor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KareeMagdyy/sass-project/issues"
+  },
+  "homepage": "https://github.com/KareeMagdyy/sass-project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.2"
+  }
+}
