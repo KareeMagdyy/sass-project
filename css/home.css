@@ -1,33 +1,9 @@
-*,
-*::after,
-*::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.container {
-  width: 1200px;
-  margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.main__nav .logo {
-  width: 30%;
-  float: left;
-}
-.main__nav .nav__items {
-  width: 70%;
-  float: left;
-}
 .main {
-  background-color: #9c9c9c;
+  background-color: #eee;
 }
 .main h1 {
-  color: #e2494c;
+  color: #f80;
 }
 .main p {
-  font-size: 1rem;
+  font-size: 2rem;
 }
