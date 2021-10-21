@@ -1,0 +1,12 @@
+*,
+*::after,
+*::before {
+  @include prefixer(box-sizing, border-box, webkit moz ms);
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
