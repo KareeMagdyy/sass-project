@@ -8,26 +8,210 @@
 }
 
 .container {
-  width: 1200px;
+  width: 75rem;
   margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  position: relative;
 }
 
-.main__nav .logo {
+.clear-fix {
+  clear: both;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: Tahoma;
+  font-size: 1rem;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+header {
+  border-bottom: 1px solid #9c9c9c;
+  overflow: hidden;
+}
+header .main__nav {
+  padding: 20px 0;
+}
+header .main__nav .logo {
+  text-transform: uppercase;
   width: 30%;
   float: left;
 }
-.main__nav .nav__items {
+header .main__nav .logo h1 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+header .main__nav .logo p {
+  margin-bottom: 2rem;
+  padding-left: 0.4rem;
+}
+header .main__nav .nav__items {
   width: 70%;
   float: left;
+  background-color: #e2494c;
+  border-radius: 0.9rem;
 }
-.main {
+header .main__nav .nav__items li {
+  float: left;
+  text-align: center;
+  width: 20%;
+  font-size: 1.1rem;
+}
+header .main__nav .nav__items li .nav__items--link {
+  text-transform: capitalize;
+  display: block;
+  padding: 20px 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 300ms ease-in;
+}
+header .main__nav .nav__items li .nav__items--link:hover, header .main__nav .nav__items li .nav__items--link:focus {
+  color: #ddd;
+  transform: scale(1.07);
+}
+
+/*start Slider*/
+.slider blockquote {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-style: italic;
+  font-weight: 500;
+  color: #5e5e5e;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.slider .img-wraper {
+  margin: 0 auto;
+  width: 960px;
+  height: 350px;
+  border-radius: 16px;
   background-color: #9c9c9c;
 }
-.main h1 {
-  color: #e2494c;
+.slider .img-wraper img {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
 }
-.main p {
-  font-size: 1rem;
+
+.bullets {
+  text-align: center;
+  margin-top: 0.25rem;
+}
+.bullets li {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #9c9c9c;
+  border-radius: 50%;
+  border: 2px solid #9c9c9c;
+  cursor: pointer;
+  transition: all 150ms ease-in;
+}
+.bullets li.active {
+  background-color: #fff;
+}
+.bullets li.active, .bullets li:hover {
+  border-color: #000;
+}
+
+/*End Slider*/
+/*Start Services*/
+.services .service__box {
+  float: left;
+  width: 33.3333333333%;
+}
+.services .service__box:not(:last-of-type) {
+  padding-right: 20px;
+}
+.services .service__box .service__box--tittle {
+  color: #666;
+}
+.services .service__box .service__box--tittle i {
+  font-size: 2rem;
+  color: #000;
+  margin-right: 1rem;
+  position: relative;
+  top: 4px;
+}
+.services .service__box .service__box--description {
+  color: #777;
+  line-height: 1.5;
+}
+.services .service__box .service__box--link {
+  color: #e2494c;
+  text-decoration: none;
+}
+
+/*End Services*/
+/*Start Players*/
+.players .players__box {
+  float: left;
+  width: 20%;
+}
+.players .players__box:not(:last-of-type) {
+  padding-right: 20px;
+}
+.players .players__box .players__box--tittle {
+  color: #666;
+  font-weight: 400;
+}
+.players .players__box .players__box--tittle span {
+  font-weight: 700;
+}
+.players .players__box .players__box--description {
+  color: #777;
+  line-height: 1.5;
+}
+.players .players__box .players__box--link {
+  color: #e2494c;
+  text-decoration: none;
+}
+
+/*End Players*/
+/*Start Lorem*/
+.lorem .lorem__box {
+  float: left;
+  width: 31.3333333333%;
+}
+.lorem .lorem__box:not(:last-of-type) {
+  margin-right: 3%;
+}
+.lorem .lorem__box .lorem__box--img {
+  max-width: 100%;
+}
+
+/*End Lorem*/
+.head-with-border {
+  position: relative;
+}
+.head-with-border h2 {
+  background-color: #e2494c;
+  color: #fff;
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  width: 300px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+.head-with-border h2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.2px;
+  left: 0;
+  top: 50%;
+  background-color: #9c9c9c;
+  z-index: -1;
 }

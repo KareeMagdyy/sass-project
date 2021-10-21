@@ -1,16 +1,46 @@
-.main__nav {
-  .logo {
-    width: 30%;
-    float: left;
-    h1 {
+header {
+  border-bottom: 1px solid $clr-secondary;
+  overflow: hidden;
+  .main__nav {
+    padding: 20px 0;
+
+    .logo {
+      text-transform: uppercase;
+      width: 30%;
+      float: $float-left;
+      h1 {
+        margin-bottom: 0;
+        margin-top: 10px;
+      }
+      p {
+        margin-bottom: 2rem;
+        padding-left: 0.4rem;
+      }
     }
-    p {
-    }
-  }
-  .nav__items {
-    width: 70%;
-    float: left;
-    li {
+    .nav__items {
+      width: 70%;
+      float: $float-left;
+      background-color: $clr-primary;
+      border-radius: 0.9rem;
+      li {
+        float: $float-left;
+        text-align: center;
+        width: 20%;
+        font-size: 1.1rem;
+        .nav__items--link {
+          text-transform: capitalize;
+          display: block;
+          padding: 20px 10px;
+          color: $clr-white;
+          text-decoration: none;
+          transition: transform 300ms ease-in;
+          &:hover,
+          &:focus {
+            color: #ddd;
+            transform: scale(1.07);
+          }
+        }
+      }
     }
   }
 }

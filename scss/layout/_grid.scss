@@ -5,8 +5,13 @@
 }
 
 .container {
-  width: 1200px;
+  width: 75rem;
   margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  position: relative;
+}
+
+.clear-fix {
+  clear: both;
 }

@@ -1,9 +1,120 @@
-.main {
-  background-color: $clr-secondary;
-  h1 {
-    color: $clr-primary;
+/*start Slider*/
+.slider {
+  blockquote {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-style: italic;
+    font-weight: 500;
+    color: #5e5e5e;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
-  p {
-    font-size: 1rem;
+  .img-wraper {
+    margin: 0 auto;
+    width: 960px;
+    height: 350px;
+    border-radius: 16px;
+    background-color: $clr-secondary;
+    img {
+      border-radius: 16px;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
+.bullets {
+  text-align: center;
+  margin-top: 0.25rem;
+  li {
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: $clr-secondary;
+    border-radius: 50%;
+    border: 2px solid $clr-secondary;
+    cursor: pointer;
+    transition: all 150ms ease-in;
+    &.active {
+      background-color: $clr-white;
+    }
+    &.active,
+    &:hover {
+      border-color: #000;
+    }
+  }
+}
+/*End Slider*/
+
+/*Start Services*/
+.services {
+  .service__box {
+    float: $float-left;
+    width: calc(100% / 3);
+    &:not(:last-of-type) {
+      padding-right: 20px;
+    }
+    .service__box--tittle {
+      color: #666;
+      i {
+        font-size: 2rem;
+        color: #000;
+        margin-right: 1rem;
+        position: relative;
+        top: 4px;
+      }
+    }
+    .service__box--description {
+      color: #777;
+      line-height: 1.5;
+    }
+    .service__box--link {
+      color: $clr-primary;
+      text-decoration: none;
+    }
+  }
+}
+/*End Services*/
+
+/*Start Players*/
+.players {
+  .players__box {
+    float: $float-left;
+    width: calc(100% / 5);
+    &:not(:last-of-type) {
+      padding-right: 20px;
+    }
+    .players__box--tittle {
+      color: #666;
+      font-weight: 400;
+      span {
+        font-weight: 700;
+      }
+    }
+    .players__box--description {
+      color: #777;
+      line-height: 1.5;
+    }
+    .players__box--link {
+      color: $clr-primary;
+      text-decoration: none;
+    }
+  }
+}
+/*End Players*/
+/*Start Lorem*/
+.lorem {
+  .lorem__box {
+    float: $float-left;
+    width: calc(94% / 3);
+    &:not(:last-of-type) {
+      margin-right: 3%;
+    }
+    .lorem__box--img {
+      max-width: 100%;
+    }
+  }
+}
+/*End Lorem*/
