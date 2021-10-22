@@ -5,11 +5,20 @@
 }
 
 .container {
-  width: 75rem;
   margin: auto;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   position: relative;
+
+  @media #{$minSmall} {
+    width: 750px;
+  }
+  @media #{$minMedium} {
+    width: 970px;
+  }
+  @media #{$minLarge} {
+    width: 1170px;
+  }
 }
 
 .clear-fix {
