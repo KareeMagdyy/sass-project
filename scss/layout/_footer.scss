@@ -1,0 +1,117 @@
+footer {
+  background-color: #e2e2e2;
+  overflow: hidden;
+  padding-top: 1.3rem;
+  margin-top: 2rem;
+
+  .gallery,
+  .info,
+  .contact {
+    float: $float-left;
+  }
+  .gallery {
+    width: 40%;
+    .gallery__box {
+      overflow: hidden;
+      &:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+      img {
+        float: $float-left;
+        width: 100px;
+        height: 100px;
+      }
+      .gallery__disc {
+        float: $float-left;
+        margin-right: 15px;
+        margin-left: 15px;
+        width: calc(100% - 130px);
+        h4 {
+          color: $clr-primary;
+          margin: 10px 0 0 0;
+        }
+        p {
+          max-width: 95%;
+          color: $clr-footer;
+          line-height: 1.7;
+          margin: 10px 0 0 0;
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+  .info {
+    width: 30%;
+    address {
+      color: $clr-footer;
+      font-style: normal;
+      line-height: 1.5;
+      p {
+        margin: 0;
+        font-weight: 700;
+        a {
+          text-decoration: none;
+          color: $clr-footer;
+          font-weight: 400;
+          &[href="mailto:#"] {
+            color: $clr-primary;
+          }
+        }
+      }
+    }
+    .hours {
+      h4 {
+        color: $clr-footer;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+      p {
+        color: $clr-footer;
+        margin-top: 8px;
+      }
+    }
+  }
+  .contact {
+    width: 30%;
+    [type="text"],
+    [type="email"],
+    textarea {
+      padding: 8px;
+      border: 1px solid $clr-footer;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      width: 100%;
+      font-family: inherit;
+      &::placeholder {
+        color: $clr-footer;
+        font-family: inherit;
+      }
+    }
+    textarea {
+      height: 120px;
+    }
+    [type="submit"] {
+      display: block;
+    }
+  }
+  .section__tittle {
+    color: #444;
+    font-weight: 400;
+  }
+  .copyright {
+    border-top: 1px solid #9c9c9c;
+    overflow: hidden;
+    color: $clr-footer;
+    margin-top: 10px;
+    padding: 20px 0;
+    font-size: 0.75rem;
+    .copyright__text,
+    .copyright__author {
+      float: $float-left;
+      width: 50%;
+    }
+    .copyright__author {
+      text-align: right;
+    }
+  }
+}

@@ -23,6 +23,7 @@ body {
   background-color: #f6f6f6;
   font-family: Tahoma;
   font-size: 1rem;
+  margin: 0;
 }
 
 ul,
@@ -214,4 +215,138 @@ header .main__nav .nav__items li .nav__items--link:hover, header .main__nav .nav
   top: 50%;
   background-color: #9c9c9c;
   z-index: -1;
+}
+
+.main-button {
+  min-width: 100px;
+  font-weight: 700;
+  background-color: rgba(226, 73, 76, 0.9);
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 250ms;
+}
+.main-button:hover, .main-button:focus {
+  background-color: #e2494c;
+}
+
+footer {
+  background-color: #e2e2e2;
+  overflow: hidden;
+  padding-top: 1.3rem;
+  margin-top: 2rem;
+}
+footer .gallery,
+footer .info,
+footer .contact {
+  float: left;
+}
+footer .gallery {
+  width: 40%;
+}
+footer .gallery .gallery__box {
+  overflow: hidden;
+}
+footer .gallery .gallery__box:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+footer .gallery .gallery__box img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+footer .gallery .gallery__box .gallery__disc {
+  float: left;
+  margin-right: 15px;
+  margin-left: 15px;
+  width: calc(100% - 130px);
+}
+footer .gallery .gallery__box .gallery__disc h4 {
+  color: #e2494c;
+  margin: 10px 0 0 0;
+}
+footer .gallery .gallery__box .gallery__disc p {
+  max-width: 95%;
+  color: #888;
+  line-height: 1.7;
+  margin: 10px 0 0 0;
+  font-size: 0.85rem;
+}
+footer .info {
+  width: 30%;
+}
+footer .info address {
+  color: #888;
+  font-style: normal;
+  line-height: 1.5;
+}
+footer .info address p {
+  margin: 0;
+  font-weight: 700;
+}
+footer .info address p a {
+  text-decoration: none;
+  color: #888;
+  font-weight: 400;
+}
+footer .info address p a[href="mailto:#"] {
+  color: #e2494c;
+}
+footer .info .hours h4 {
+  color: #888;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+footer .info .hours p {
+  color: #888;
+  margin-top: 8px;
+}
+footer .contact {
+  width: 30%;
+}
+footer .contact [type=text],
+footer .contact [type=email],
+footer .contact textarea {
+  padding: 8px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  font-family: inherit;
+}
+footer .contact [type=text]::placeholder,
+footer .contact [type=email]::placeholder,
+footer .contact textarea::placeholder {
+  color: #888;
+  font-family: inherit;
+}
+footer .contact textarea {
+  height: 120px;
+}
+footer .contact [type=submit] {
+  display: block;
+}
+footer .section__tittle {
+  color: #444;
+  font-weight: 400;
+}
+footer .copyright {
+  border-top: 1px solid #9c9c9c;
+  overflow: hidden;
+  color: #888;
+  margin-top: 10px;
+  padding: 20px 0;
+  font-size: 0.75rem;
+}
+footer .copyright .copyright__text,
+footer .copyright .copyright__author {
+  float: left;
+  width: 50%;
+}
+footer .copyright .copyright__author {
+  text-align: right;
 }

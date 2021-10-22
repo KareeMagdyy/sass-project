@@ -1,0 +1,17 @@
+.main-button {
+  min-width: 100px;
+  font-weight: 700;
+  background-color: rgba($clr-primary, 0.9);
+  padding: 8px 16px;
+  color: $clr-white;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 250ms;
+  &:hover,
+  &:focus {
+    background-color: $clr-primary;
+  }
+}
