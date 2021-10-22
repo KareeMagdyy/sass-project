@@ -296,6 +296,9 @@ footer .info address p a {
 footer .info address p a[href="mailto:#"] {
   color: #e2494c;
 }
+footer .info address p a[href="mailto:#"]:hover {
+  text-decoration: underline;
+}
 footer .info .hours h4 {
   color: #888;
   font-weight: 700;
