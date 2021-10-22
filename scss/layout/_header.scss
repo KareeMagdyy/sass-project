@@ -5,9 +5,18 @@ header {
     padding: 20px 0;
 
     .logo {
+      position: relative;
       text-transform: uppercase;
-      width: 30%;
-      float: $float-left;
+      @media #{$minSmall} {
+        width: 100%;
+        float: none;
+        text-align: center;
+      }
+      @media #{$minMedium} {
+        width: 30%;
+        float: $float-left;
+        text-align: $text-left;
+      }
       h1 {
         margin-bottom: 0;
         margin-top: 10px;
@@ -16,12 +25,30 @@ header {
         margin-bottom: 2rem;
         padding-left: 0.4rem;
       }
+      .main__nav--toggler {
+        @media #{$minSmall} {
+          display: none;
+        }
+      }
     }
     .nav__items {
-      width: 70%;
-      float: $float-left;
+      display: none;
+      overflow: hidden;
       background-color: $clr-primary;
-      border-radius: 0.9rem;
+      border-radius: 0;
+      @media #{$minSmall} {
+        width: 100%;
+        float: none;
+        margin-top: 30px;
+        text-align: center;
+        border-radius: 0.9rem;
+        display: block;
+      }
+      @media #{$minMedium} {
+        width: 70%;
+        float: $float-left;
+        margin-top: 1em;
+      }
       li {
         float: $float-left;
         text-align: center;

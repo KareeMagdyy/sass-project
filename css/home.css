@@ -55,9 +55,22 @@ header .main__nav {
   padding: 20px 0;
 }
 header .main__nav .logo {
+  position: relative;
   text-transform: uppercase;
-  width: 30%;
-  float: left;
+}
+@media (min-width: 48rem) {
+  header .main__nav .logo {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+@media (min-width: 62rem) {
+  header .main__nav .logo {
+    width: 30%;
+    float: left;
+    text-align: left;
+  }
 }
 header .main__nav .logo h1 {
   margin-bottom: 0;
@@ -67,11 +80,33 @@ header .main__nav .logo p {
   margin-bottom: 2rem;
   padding-left: 0.4rem;
 }
+@media (min-width: 48rem) {
+  header .main__nav .logo .main__nav--toggler {
+    display: none;
+  }
+}
 header .main__nav .nav__items {
-  width: 70%;
-  float: left;
+  display: none;
+  overflow: hidden;
   background-color: #e2494c;
-  border-radius: 0.9rem;
+  border-radius: 0;
+}
+@media (min-width: 48rem) {
+  header .main__nav .nav__items {
+    width: 100%;
+    float: none;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 0.9rem;
+    display: block;
+  }
+}
+@media (min-width: 62rem) {
+  header .main__nav .nav__items {
+    width: 70%;
+    float: left;
+    margin-top: 1em;
+  }
 }
 header .main__nav .nav__items li {
   float: left;
@@ -246,6 +281,25 @@ header .main__nav .nav__items li .nav__items--link:hover, header .main__nav .nav
 }
 .main-button:hover, .main-button:focus {
   background-color: #e2494c;
+}
+
+.main__nav--toggler {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  background-color: #e2494c;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+.main__nav--toggler span {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+}
+.main__nav--toggler span:not(:last-of-type) {
+  margin-bottom: 5px;
 }
 
 footer {
