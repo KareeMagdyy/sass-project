@@ -4,6 +4,11 @@ $clr-secondary: #9c9c9c;
 $clr-footer: #888;
 $clr-white: #fff;
 
+//Breakpoints
+$minSmall: "(min-width: 48rem)";
+$minMedium: "(min-width: 62rem)";
+$minLarge: "(min-width: 75rem)";
+
 //Directions
 $float-left: left;
 $float-right: right;

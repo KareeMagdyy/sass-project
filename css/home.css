@@ -8,11 +8,25 @@
 }
 
 .container {
-  width: 75rem;
   margin: auto;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   position: relative;
+}
+@media (min-width: 48rem) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 62rem) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 75rem) {
+  .container {
+    width: 1170px;
+  }
 }
 
 .clear-fix {
