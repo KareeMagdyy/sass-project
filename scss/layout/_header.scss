@@ -52,11 +52,14 @@ header {
       }
       li {
         display: block;
-        width: 20%;
         font-size: 1.1rem;
+        text-align: $text-left;
+        padding-left: 1rem;
+        padding-right: 1rem;
         @media #{$minSmall} {
           float: $float-left;
           text-align: center;
+          width: 20%;
         }
         .nav__items--link {
           text-transform: capitalize;
@@ -64,11 +67,13 @@ header {
           padding: 20px 10px;
           color: $clr-white;
           text-decoration: none;
-          transition: transform 300ms ease-in;
-          &:hover,
-          &:focus {
-            color: #ddd;
-            transform: scale(1.07);
+          @media #{$minSmall} {
+            transition: transform 300ms ease-in;
+            &:hover,
+            &:focus {
+              color: #ddd;
+              transform: scale(1.07);
+            }
           }
         }
       }

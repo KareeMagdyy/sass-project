@@ -118,13 +118,16 @@ header .main__nav .nav__items {
 }
 header .main__nav .nav__items li {
   display: block;
-  width: 20%;
   font-size: 1.1rem;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 @media (min-width: 48rem) {
   header .main__nav .nav__items li {
     float: left;
     text-align: center;
+    width: 20%;
   }
 }
 header .main__nav .nav__items li .nav__items--link {
@@ -133,11 +136,15 @@ header .main__nav .nav__items li .nav__items--link {
   padding: 20px 10px;
   color: #fff;
   text-decoration: none;
-  transition: transform 300ms ease-in;
 }
-header .main__nav .nav__items li .nav__items--link:hover, header .main__nav .nav__items li .nav__items--link:focus {
-  color: #ddd;
-  transform: scale(1.07);
+@media (min-width: 48rem) {
+  header .main__nav .nav__items li .nav__items--link {
+    transition: transform 300ms ease-in;
+  }
+  header .main__nav .nav__items li .nav__items--link:hover, header .main__nav .nav__items li .nav__items--link:focus {
+    color: #ddd;
+    transform: scale(1.07);
+  }
 }
 
 /*start Slider*/
@@ -223,11 +230,27 @@ header .main__nav .nav__items li .nav__items--link:hover, header .main__nav .nav
 /*End Services*/
 /*Start Players*/
 .players .players__box {
-  float: left;
-  width: 20%;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
-.players .players__box:not(:last-of-type) {
-  padding-right: 20px;
+@media (min-width: 48rem) {
+  .players .players__box {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+}
+@media (min-width: 62rem) {
+  .players .players__box {
+    width: 33.3333333333%;
+    text-align: left;
+  }
+}
+@media (min-width: 75rem) {
+  .players .players__box {
+    width: 20%;
+  }
 }
 .players .players__box img {
   max-width: 100%;
@@ -242,6 +265,12 @@ header .main__nav .nav__items li .nav__items--link:hover, header .main__nav .nav
 .players .players__box .players__box--description {
   color: #777;
   line-height: 1.5;
+}
+@media (max-width: 47.9375rem) {
+  .players .players__box .players__box--description {
+    max-width: 40ch;
+    margin: 1em auto;
+  }
 }
 .players .players__box .players__box--link {
   color: #e2494c;
@@ -272,7 +301,7 @@ header .main__nav .nav__items li .nav__items--link:hover, header .main__nav .nav
   margin: 40px auto;
   border-radius: 0.5rem;
   font-size: 1.2rem;
-  width: 300px;
+  max-width: 300px;
   padding: 10px 15px;
   text-transform: uppercase;
 }

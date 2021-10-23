@@ -86,10 +86,20 @@
 /*Start Players*/
 .players {
   .players__box {
-    float: $float-left;
-    width: calc(100% / 5);
-    &:not(:last-of-type) {
-      padding-right: 20px;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    @media #{$minSmall} {
+      float: $float-left;
+      width: calc(100% / 2);
+      text-align: center;
+    }
+    @media #{$minMedium} {
+      width: calc(100% / 3);
+      text-align: $text-left;
+    }
+    @media #{$minLarge} {
+      width: calc(100% / 5);
     }
     img {
       max-width: 100%;
@@ -104,6 +114,10 @@
     .players__box--description {
       color: #777;
       line-height: 1.5;
+      @media #{$maxSmall} {
+        max-width: 40ch;
+        margin: 1em auto;
+      }
     }
     .players__box--link {
       color: $clr-primary;
