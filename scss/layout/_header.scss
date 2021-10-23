@@ -36,13 +36,14 @@ header {
       overflow: hidden;
       background-color: $clr-primary;
       border-radius: 0;
+      transform-origin: top;
       @media #{$minSmall} {
         width: 100%;
         float: none;
         margin-top: 30px;
         text-align: center;
         border-radius: 0.9rem;
-        display: block;
+        display: block !important;
       }
       @media #{$minMedium} {
         width: 70%;
@@ -50,10 +51,13 @@ header {
         margin-top: 1em;
       }
       li {
-        float: $float-left;
-        text-align: center;
+        display: block;
         width: 20%;
         font-size: 1.1rem;
+        @media #{$minSmall} {
+          float: $float-left;
+          text-align: center;
+        }
         .nav__items--link {
           text-transform: capitalize;
           display: block;

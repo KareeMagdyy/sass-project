@@ -90,6 +90,7 @@ header .main__nav .nav__items {
   overflow: hidden;
   background-color: #e2494c;
   border-radius: 0;
+  transform-origin: top;
 }
 @media (min-width: 48rem) {
   header .main__nav .nav__items {
@@ -98,7 +99,7 @@ header .main__nav .nav__items {
     margin-top: 30px;
     text-align: center;
     border-radius: 0.9rem;
-    display: block;
+    display: block !important;
   }
 }
 @media (min-width: 62rem) {
@@ -109,10 +110,15 @@ header .main__nav .nav__items {
   }
 }
 header .main__nav .nav__items li {
-  float: left;
-  text-align: center;
+  display: block;
   width: 20%;
   font-size: 1.1rem;
+}
+@media (min-width: 48rem) {
+  header .main__nav .nav__items li {
+    float: left;
+    text-align: center;
+  }
 }
 header .main__nav .nav__items li .nav__items--link {
   text-transform: capitalize;
@@ -142,10 +148,7 @@ header .main__nav .nav__items li .nav__items--link:hover, header .main__nav .nav
 }
 .slider .img-wraper {
   margin: 0 auto;
-  width: 960px;
-  height: 350px;
   border-radius: 16px;
-  background-color: #9c9c9c;
 }
 .slider .img-wraper img {
   border-radius: 16px;
