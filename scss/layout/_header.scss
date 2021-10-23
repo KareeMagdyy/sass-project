@@ -5,39 +5,77 @@ header {
     padding: 20px 0;
 
     .logo {
+      position: relative;
       text-transform: uppercase;
-      width: 30%;
-      float: $float-left;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      @media #{$minSmall} {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 0;
+      }
+      @media #{$minMedium} {
+        width: 30%;
+        float: $float-left;
+        text-align: $text-left;
+      }
       h1 {
         margin-bottom: 0;
         margin-top: 10px;
       }
       p {
         margin-bottom: 2rem;
-        padding-left: 0.4rem;
+      }
+      .main__nav--toggler {
+        @media #{$minSmall} {
+          display: none;
+        }
       }
     }
     .nav__items {
-      width: 70%;
-      float: $float-left;
+      display: none;
+      overflow: hidden;
       background-color: $clr-primary;
-      border-radius: 0.9rem;
-      li {
-        float: $float-left;
+      border-radius: 0;
+      transform-origin: top;
+      @media #{$minSmall} {
+        width: 100%;
+        float: none;
+        margin-top: 30px;
         text-align: center;
-        width: 20%;
+        border-radius: 0.9rem;
+        display: block !important;
+      }
+      @media #{$minMedium} {
+        width: 70%;
+        float: $float-left;
+        margin-top: 1em;
+      }
+      li {
+        display: block;
         font-size: 1.1rem;
+        text-align: $text-left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        @media #{$minSmall} {
+          float: $float-left;
+          text-align: center;
+          width: 20%;
+        }
         .nav__items--link {
           text-transform: capitalize;
           display: block;
           padding: 20px 10px;
           color: $clr-white;
           text-decoration: none;
-          transition: transform 300ms ease-in;
-          &:hover,
-          &:focus {
-            color: #ddd;
-            transform: scale(1.07);
+          @media #{$minSmall} {
+            transition: transform 300ms ease-in;
+            &:hover,
+            &:focus {
+              color: #ddd;
+              transform: scale(1.07);
+            }
           }
         }
       }

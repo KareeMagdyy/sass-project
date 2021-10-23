@@ -15,3 +15,22 @@
     background-color: $clr-primary;
   }
 }
+
+.main__nav--toggler {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  background-color: $clr-primary;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  span {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: $clr-white;
+    &:not(:last-of-type) {
+      margin-bottom: 5px;
+    }
+  }
+}

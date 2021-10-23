@@ -14,10 +14,7 @@
   }
   .img-wraper {
     margin: 0 auto;
-    width: 960px;
-    height: 350px;
     border-radius: 16px;
-    background-color: $clr-secondary;
     img {
       border-radius: 16px;
       width: 100%;
@@ -51,10 +48,18 @@
 /*Start Services*/
 .services {
   .service__box {
-    float: $float-left;
-    width: calc(100% / 3);
-    &:not(:last-of-type) {
-      padding-right: 20px;
+    @media #{$minMedium} {
+      float: $float-left;
+      width: calc(100% / 3);
+      &:not(:last-of-type) {
+        padding-right: 20px;
+      }
+    }
+    @media #{$maxSmall} {
+      i {
+        display: block;
+        margin-bottom: 1rem;
+      }
     }
     .service__box--tittle {
       color: #666;
@@ -81,10 +86,23 @@
 /*Start Players*/
 .players {
   .players__box {
-    float: $float-left;
-    width: calc(100% / 5);
-    &:not(:last-of-type) {
-      padding-right: 20px;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    @media #{$minSmall} {
+      float: $float-left;
+      width: calc(100% / 2);
+      text-align: center;
+    }
+    @media #{$minMedium} {
+      width: calc(100% / 3);
+      text-align: $text-left;
+    }
+    @media #{$minLarge} {
+      width: calc(100% / 5);
+    }
+    img {
+      max-width: 100%;
     }
     .players__box--tittle {
       color: #666;
@@ -96,6 +114,10 @@
     .players__box--description {
       color: #777;
       line-height: 1.5;
+      @media #{$maxSmall} {
+        max-width: 40ch;
+        margin: 1em auto;
+      }
     }
     .players__box--link {
       color: $clr-primary;
@@ -107,10 +129,14 @@
 /*Start Lorem*/
 .lorem {
   .lorem__box {
-    float: $float-left;
-    width: calc(94% / 3);
-    &:not(:last-of-type) {
-      margin-right: 3%;
+    margin-bottom: 1rem;
+    text-align: center;
+    @media #{$minSmall} {
+      float: $float-left;
+      width: calc(94% / 3);
+      &:not(:last-of-type) {
+        margin: 0 3% 0 0;
+      }
     }
     .lorem__box--img {
       max-width: 100%;

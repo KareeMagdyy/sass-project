@@ -7,41 +7,67 @@ footer {
   .gallery,
   .info,
   .contact {
-    float: $float-left;
+    @media #{$minSmall} {
+      float: $float-left;
+    }
+  }
+  .info,
+  .contact {
+    @media #{$maxSmall} {
+      margin-top: 2.5rem;
+    }
   }
   .gallery {
-    width: 40%;
+    @media #{$minMedium} {
+      width: 40%;
+    }
+
     .gallery__box {
       overflow: hidden;
       &:not(:last-of-type) {
         margin-bottom: 15px;
       }
       img {
-        float: $float-left;
+        @media #{$minSmall} {
+          float: $float-left;
+        }
+
         width: 100px;
         height: 100px;
       }
       .gallery__disc {
-        float: $float-left;
-        margin-right: 15px;
-        margin-left: 15px;
-        width: calc(100% - 130px);
+        @media #{$minSmall} {
+          float: $float-left;
+          margin-right: 15px;
+          margin-left: 15px;
+          width: calc(100% - 130px);
+        }
         h4 {
           color: $clr-primary;
           margin: 10px 0 0 0;
         }
         p {
-          max-width: 95%;
           color: $clr-footer;
           line-height: 1.7;
-          margin: 10px 0 0 0;
+          margin-top: 10px;
           font-size: 0.85rem;
+          max-width: 50ch;
+          margin-left: auto;
+          margin-right: auto;
+          @media #{$minMedium} {
+            max-width: 95%;
+          }
         }
       }
     }
   }
   .info {
-    width: 30%;
+    @media #{$minSmall} {
+      width: 50%;
+    }
+    @media #{$minMedium} {
+      width: 30%;
+    }
     address {
       color: $clr-footer;
       font-style: normal;
@@ -75,7 +101,12 @@ footer {
     }
   }
   .contact {
-    width: 30%;
+    @media #{$minSmall} {
+      width: 50%;
+    }
+    @media #{$minMedium} {
+      width: 30%;
+    }
     [type="text"],
     [type="email"],
     textarea {
@@ -105,16 +136,22 @@ footer {
     border-top: 1px solid #9c9c9c;
     overflow: hidden;
     color: $clr-footer;
-    margin-top: 10px;
+    margin-top: 2rem;
     padding: 20px 0;
     font-size: 0.75rem;
     .copyright__text,
     .copyright__author {
-      float: $float-left;
-      width: 50%;
+      @media #{$minSmall} {
+        float: $float-left;
+        width: 50%;
+      }
     }
     .copyright__author {
-      text-align: right;
+      padding-top: 0.6rem;
+      @media #{$minSmall} {
+        text-align: right;
+        padding-top: 0;
+      }
     }
   }
 }
