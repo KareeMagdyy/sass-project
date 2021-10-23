@@ -7,10 +7,13 @@ header {
     .logo {
       position: relative;
       text-transform: uppercase;
+      padding-left: 1rem;
+      padding-right: 1rem;
       @media #{$minSmall} {
         width: 100%;
         float: none;
         text-align: center;
+        padding: 0;
       }
       @media #{$minMedium} {
         width: 30%;
@@ -23,7 +26,6 @@ header {
       }
       p {
         margin-bottom: 2rem;
-        padding-left: 0.4rem;
       }
       .main__nav--toggler {
         @media #{$minSmall} {

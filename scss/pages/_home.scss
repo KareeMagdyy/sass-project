@@ -129,10 +129,14 @@
 /*Start Lorem*/
 .lorem {
   .lorem__box {
-    float: $float-left;
-    width: calc(94% / 3);
-    &:not(:last-of-type) {
-      margin-right: 3%;
+    margin-bottom: 1rem;
+    text-align: center;
+    @media #{$minSmall} {
+      float: $float-left;
+      width: calc(94% / 3);
+      &:not(:last-of-type) {
+        margin: 0 3% 0 0;
+      }
     }
     .lorem__box--img {
       max-width: 100%;
