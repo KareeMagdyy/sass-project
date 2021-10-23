@@ -33,11 +33,18 @@
   clear: both;
 }
 
+@media (max-width: 47.9375rem) {
+  .text-center-xs {
+    text-align: center;
+  }
+}
+
 body {
   background-color: #f6f6f6;
   font-family: Tahoma;
   font-size: 1rem;
   margin: 0;
+  overflow-x: hidden;
 }
 
 ul,
@@ -179,12 +186,20 @@ header .main__nav .nav__items li .nav__items--link:hover, header .main__nav .nav
 
 /*End Slider*/
 /*Start Services*/
-.services .service__box {
-  float: left;
-  width: 33.3333333333%;
+@media (min-width: 62rem) {
+  .services .service__box {
+    float: left;
+    width: 33.3333333333%;
+  }
+  .services .service__box:not(:last-of-type) {
+    padding-right: 20px;
+  }
 }
-.services .service__box:not(:last-of-type) {
-  padding-right: 20px;
+@media (max-width: 47.9375rem) {
+  .services .service__box i {
+    display: block;
+    margin-bottom: 1rem;
+  }
 }
 .services .service__box .service__box--tittle {
   color: #666;
@@ -213,6 +228,9 @@ header .main__nav .nav__items li .nav__items--link:hover, header .main__nav .nav
 }
 .players .players__box:not(:last-of-type) {
   padding-right: 20px;
+}
+.players .players__box img {
+  max-width: 100%;
 }
 .players .players__box .players__box--tittle {
   color: #666;

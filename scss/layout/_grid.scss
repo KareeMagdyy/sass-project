@@ -24,3 +24,9 @@
 .clear-fix {
   clear: both;
 }
+
+.text-center-xs {
+  @media #{$maxSmall} {
+    text-align: center;
+  }
+}

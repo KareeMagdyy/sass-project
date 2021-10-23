@@ -48,10 +48,18 @@
 /*Start Services*/
 .services {
   .service__box {
-    float: $float-left;
-    width: calc(100% / 3);
-    &:not(:last-of-type) {
-      padding-right: 20px;
+    @media #{$minMedium} {
+      float: $float-left;
+      width: calc(100% / 3);
+      &:not(:last-of-type) {
+        padding-right: 20px;
+      }
+    }
+    @media #{$maxSmall} {
+      i {
+        display: block;
+        margin-bottom: 1rem;
+      }
     }
     .service__box--tittle {
       color: #666;
@@ -82,6 +90,9 @@
     width: calc(100% / 5);
     &:not(:last-of-type) {
       padding-right: 20px;
+    }
+    img {
+      max-width: 100%;
     }
     .players__box--tittle {
       color: #666;
